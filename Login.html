@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-wrapper">
+      <h2>Login</h2>
+      <form class="login-form">
+        <input type="text" placeholder="Username" name="username" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <button type="submit" onclick="validateCredentials(event)">Log In</button>
+        <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function validateCredentials(event) {
+      event.preventDefault(); 
+
+
+      var username = document.querySelector('input[name="username"]').value;
+      var password = document.querySelector('input[name="password"]').value;
+
+      
+      if (username === "hemanthkumar486@sasi.ac.in" && password === "hemanth555") {
+        
+        window.location.href = "index.html";
+      } else {
+        
+        alert("Invalid username or password");
+      }
+    }
+  </script>
+</body>
+</html>

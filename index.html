@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HotelPro.com</title>
+  <link rel="stylesheet" type="text/css" href="Menu.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="logo">
+            Hotel
+            <span style="color: red">Pro</span>
+          </a>
+      <ul class="navbar-menu">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="Menu.html"><i class="fas fa-book"></i> Menu</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="Login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Rest of the page content -->
+  <div id="slideshow-container" class="slideshow-container">
+    <div class="slide-item bgimg fade" style="background-image: url('assets/BanhMi_NgonVietnam01.jpg');">
+      <div class="caption">
+        <h2>
+          NON-VEG Cuisines 
+        </h2>
+        <p>
+          Non-vegetarian food strengthens our muscles and helps them grow faster. It also helps to maintain body stamina and hemoglobin.
+        </p>
+        <button type="submit" onclick="window.location.href='Menu.html';">
+          Order now
+        </button>
+      </div>
+    </div>
+  
+    <div class="slide-item bgimg fade" style="background-image: url('assets/maxresdefault.jpg');">
+      <div class="caption">
+        <h2>
+          VEG Cuisines 
+        </h2>
+        <p>
+          A vegetarian diet can give all the nourishment required for the body. Plant foods do not contain cholesterol & are good for health-conscious.
+        </p>
+        <button type="submit" onclick="window.location.href='Menu.html';">
+          Order now
+        </button>
+      </div>
+    </div>
+  
+    <div class="slide-item bgimg fade" style="background-image: url('assets/vy-huynh-rcHHKG01IPY-unsplash.jpg');">
+      <div class="caption">
+        <h2>
+          Many Varieties
+        </h2>
+        <p>
+          some Varieties with yummy Tastes
+        </p>
+        <button type="submit" onclick="window.location.href='Menu.html';">
+          Order now
+        </button>
+      </div>
+    </div>
+  
+    <div id="slide-control" class="slide-control">
+      <span class="dot" onclick="chooseSlide(0)"></span>
+      <span class="dot" onclick="chooseSlide(1)"></span>
+      <span class="dot" onclick="chooseSlide(2)"></span>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+  
+
+</body>
+</html>

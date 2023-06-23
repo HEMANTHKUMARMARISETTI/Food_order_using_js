@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HotelPro.com</title>
+  <link rel="stylesheet" type="text/css" href="Menu.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .button-44 {
+      background: #e62143;
+      border-radius: 11px;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+      font-size: 1.15em;
+      font-weight: 700;
+      justify-content: center;
+      line-height: 33.4929px;
+      padding: .8em 1em;
+      text-align: center;
+      text-decoration: none;
+      text-decoration-skip-ink: auto;
+      text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+      text-underline-offset: 1px;
+      transition: all .2s ease-in-out;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 50%;
+      word-break: break-word;
+      border: 0;
+    }
+    
+    .button-44:active,
+    .button-44:focus {
+      border-bottom-style: none;
+      border-color: #dadada;
+      box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+      outline: 0;
+    }
+    
+    .button-44:hover {
+      border-bottom-style: none;
+      border-color: #dadada;
+    }
+
+    table {
+    
+      font-family: arial, sans-serif;
+    
+      border-collapse: collapse;
+    
+      width: 100%;
+      height: 500px;
+    
+    }
+    
+    
+    td, th {
+    
+      border: 1px solid #dddddd;
+    
+      text-align: left;
+    
+      padding: 8px;
+    
+    }
+    
+    
+    tr:nth-child(even) {
+    
+      background-color: #dddddd;
+    
+    }
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 20px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+    
+    
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo"><i class="fas fa-utensils"></i>HOTEL
+        <span style="color: red">PRO</span></a>
+      <ul class="navbar-menu">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="Menu.html"><i class="fas fa-book"></i> Menu</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="Login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Rest of the page content -->
+  <table>
+    <h2>
+    <hr><marquee behavior="scroll" direction="right" ><span style="color: red">NON -VEG </span>CUISINES</marquee><hr>
+
+    </h2>
+
+    <tr>
+  
+      <th>NAME</th>
+  
+      <th>ITEM </th>
+  
+      <th>PRICE & PLACE</th>
+  
+    </tr>
+  
+    <tr>
+  
+      <td>chicken biryani</td>
+  
+      <td><img src="biryani.jpg" style="border-radius: 20%;" height="150px" width="150px"></td>
+  
+      <td><button onclick="addToCart('chicken biryani',200)" class="button-27" role="button">Place Item<br>RS.200</button></td>
+  
+    </tr>
+  
+    <tr>
+  
+      <td>Noodles</td>
+  
+      <td><img src="noodles.jpg" style="border-radius: 20%;" height="150px" width="150px"></td>
+  
+      <td><button onclick="addToCart('noodles',150)" class="button-27" role="button">Place Item<br>RS.150</button></td>
+  
+    </tr>
+    <tr>
+  
+        <td>Mutton Biryani</td>
+    
+        <td><img src="mutton.jpg" style="border-radius: 20%;" height="150px" width="150px"></td>
+    
+        <td><button onclick="addToCart('Mutton Biryani',250)" class="button-27" role="button">Place Item<br>RS.150</button></td>
+    
+      </tr>
+  
+<!-- veg CUISINES -->
+  
+  </table>
+  <h2>
+    <hr><marquee behavior="scroll" direction="right" ><span style="color: red">VEG </span>CUISINES</marquee><hr>
+
+    </h2>
+  <table>
+    
+        <tr>
+      
+          <th>NAME</th>
+      
+          <th>ITEM </th>
+      
+          <th>PRICE & PLACE</th>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>Veg Biryani&ensp;&ensp;&ensp;</td>
+      
+          <td><img src="vegb.jpg" style="border-radius: 20%;" height="150px" width="150px"></td>
+      
+          <td><button onclick="addToCart('Veg biryani',100)" class="button-27" role="button">Place Item<br>RS.100</button></td>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>Veg Noodles</td>
+      
+          <td><img src="noodd.jpg" style="border-radius: 20%;" height="150px" width="150px"></td>
+      
+          <td><button onclick="addToCart('veg noodles',100)" class="button-27" role="button">Place Item<br>RS.100</button></td>
+      
+        </tr>
+        <tr>
+      
+            <td>Full Meals</td>
+        
+            <td><img src="meals.jpg" style="border-radius: 20%;" height="150px" width="150px"></td>
+        
+            <td><button onclick="addToCart('Meals',150)" class="button-27" role="button">Place Item<br>RS.150</button></td>
+        
+          </tr>
+  </table>
+  <h2>
+    <hr><marquee behavior="scroll" direction="right" ><span style="color: red">Bakery </span>CUISINES</marquee><hr>
+
+    </h2>
+  <table>
+    
+        <tr>
+      
+          <th>NAME</th>
+      
+          <th>ITEM </th>
+      
+          <th>PRICE & PLACE</th>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>Cake&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+      
+          <td><img src="cake.webp" style="border-radius: 20%;" height="150px" width="150px"></td>
+      
+          <td><button onclick="addToCart('cake',200)" class="button-27" role="button">Place Item<br>RS.200</button></td>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>Pizza</td>
+      
+          <td><img src="pizza.jpg" style="border-radius: 20%;" height="150px" width="150px"></td>
+      
+          <td><button onclick="addToCart('pizza',100)" class="button-27" role="button">Place Item<br>RS.100</button></td>
+      
+        </tr>
+        
+  </table>
+  <br>
+  <br>
+  <hr>
+  
+  <h1>YOUR <span style="color: red">ORDER</span> LIST</h1>
+  <br>
+  
+  <ul id="cart"></ul>
+  <h3>Total Price: <span id="total-price">0.00</span></h5>
+  <button onclick="placeOrder()"  class="button-44" role="button">Place order</button>
+
+  <script>
+    
+    
+    var cart = [];
+    
+    function addToCart(item, price) {
+      cart.push({ item: item, price: price });
+      displayCart();
+      calculateTotalPrice();
+    }
+    
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      displayCart();
+      calculateTotalPrice();
+    }
+    
+    function displayCart() {
+      var cartElement = document.getElementById('cart');
+      cartElement.innerHTML = '';
+      
+      for (var i = 0; i < cart.length; i++) {
+        var item = cart[i];
+        var listItem = document.createElement('li');
+        listItem.innerHTML = '<span>' + item.item + ' = </span><span>RS' + item.price + '  </span><button onclick="removeFromCart(' + i + ')">Remove</button>';
+
+        cartElement.appendChild(listItem);
+      }
+    }
+    
+    function calculateTotalPrice() {
+      var totalPrice = 0;
+      for (var i = 0; i < cart.length; i++) {
+        totalPrice += cart[i].price;
+      }
+      document.getElementById('total-price').innerHTML = totalPrice.toFixed(2);
+    }
+    
+    function placeOrder() {
+      cart = [];
+      displayCart();
+      calculateTotalPrice();
+      alert('Order placed successfully!');
+    }
+  </script>
+
+  <br><hr><br>
+  <footer class="footer">
+    <p>&copy; 2023 HotelPro. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
